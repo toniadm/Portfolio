@@ -1,10 +1,9 @@
 @media screen and (max-width: 600px) {
-
-    .header-logo {
-      margin: auto;
+  .header-logo {
+    margin: auto;
   }
 
-	.navi {
+  .navi {
     flex-flow: column;
     text-align: center;
   }
@@ -16,81 +15,80 @@
     font-size: 24px;
   }
 
-    .whoami {
-      order: 1;
-      margin: auto;
-      text-align: center;
-	}
+  .whoami {
+    order: 1;
+    margin: auto;
+    text-align: center;
+  }
 
-   .blksz:hover,
-   .blksz {
+  .blksz:hover,
+  .blksz {
     transition: none !important;
     transform: none !important;
   }
 
-   .copy {
+  .copy {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
-
-    .navi a,
-    .navi a:hover {
-      text-align: center;
-      border-top: 1px solid rgba(255,255,255,0.3);
-      border-bottom: 1px solid rgba(0,0,0,0.1);
-      font-size: 20px;
-      transition: none !important;
-      transform: none !important;
-    }
-
-    .whoami {
-      order: 1;
-    }
-
-    .header-logo {
-      order: 0;
-    }
-
-   .blksz:hover,
-   .blksz {
+  .navi a,
+  .navi a:hover {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    font-size: 20px;
     transition: none !important;
     transform: none !important;
-   }
+  }
 
-   .copy {
+  .whoami {
+    order: 1;
+  }
+
+  .header-logo {
+    order: 0;
+  }
+
+  .blksz:hover,
+  .blksz {
+    transition: none !important;
+    transform: none !important;
+  }
+
+  .copy {
     font-size: 4vw;
-   }
+  }
 }
 
 @media screen and (min-width: 901px) and (max-width: 1200px) {
 
-    .navi a,
-    .navi a:hover {
-      border: 0;
-      font-size: 20px;
-      transition: none !important;
-      transform: none !important;
-    }
+  .navi a,
+  .navi a:hover {
+    border: 0;
+    font-size: 20px;
+    transition: none !important;
+    transform: none !important;
+  }
 
-    .header-logo {
-      order: 0;
-    }
+  .header-logo {
+    order: 0;
+  }
 
-    .whoami {
-      order: 1;
-    }
+  .whoami {
+    order: 1;
+  }
 
-   .nav2 {
-   	flex-wrap: nowrap;
-   }
+  .nav2 {
+    flex-wrap: nowrap;
+  }
 
-   .picdesc {
+  .picdesc {
     line-height: normal;
-   }
+  }
 
-   .copy {
+  .copy {
     font-size: 2vw;
-   }
+  }
 }
