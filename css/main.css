@@ -10,7 +10,6 @@ body {
   Header
 **************************************/
 header {
-  /*text-align: center;*/
   justify-content: space-between;
   background-color: #154360;
   border-bottom: 5px solid white;
@@ -76,6 +75,9 @@ ul {
 /**************************************
   Hero Section
 **************************************/
+.intro {
+  display: none;
+}
 
 video {
   width: 100%;
@@ -147,8 +149,8 @@ footer {
 }
 
 .copy {
-    font-size: 18px;
-    font-family: "Courgette", "Lucida Grande", sans-serif;
-    letter-spacing: 2px;
-    color: white;
+  font-size: 18px;
+  font-family: "Courgette", "Lucida Grande", sans-serif;
+  letter-spacing: 2px;
+  color: white;
 }
