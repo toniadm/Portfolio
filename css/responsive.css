@@ -10,8 +10,8 @@
 
   .navi a {
     padding: 15px;
-    border-top: 1px solid rgba(255,255,255,0.3);
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    /*border-top: 1px solid rgba(255,255,255,0.3);*/
+    border-bottom: 1px solid #154360;
     font-size: 24px;
   }
 
@@ -19,6 +19,14 @@
     order: 1;
     margin: auto;
     text-align: center;
+  }
+
+  .myname {
+    font-size: 22px;
+  }
+
+  article {
+    padding: 0 20px;
   }
 
   .blksz:hover,
@@ -51,6 +59,10 @@
     order: 0;
   }
 
+  article {
+    padding: 0 20px;
+  }
+
   .blksz:hover,
   .blksz {
     transition: none !important;
@@ -80,12 +92,22 @@
     order: 1;
   }
 
+  article {
+    padding: 0 30px;
+  }
+
   .nav2 {
     flex-wrap: nowrap;
   }
 
   .picdesc {
     line-height: normal;
+  }
+
+  .blksz:hover,
+  .blksz {
+    transition: none !important;
+    transform: none !important;
   }
 
   .copy {
