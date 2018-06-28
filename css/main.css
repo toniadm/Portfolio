@@ -25,13 +25,14 @@ header {
 .whoami {
   color: white;
   padding: 0 10px;
-  margin-top: 40px;
+  margin-top: 70px;
 }
 
 .myname {
   font-family: "Courgette", "Lucida Grande", sans-serif;
   line-height: 10px;
   letter-spacing: 3px;
+  font-size: 2em;
 }
 
 .mydesc {
