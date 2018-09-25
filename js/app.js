@@ -17,7 +17,6 @@ deck.addEventListener('click', function() {
         targetClicked.classList.toggle('open');
         targetClicked.classList.toggle('show');
         flippedCards.push(targetClicked);
-        console.log(flippedCards);
 
         if (flippedCards.length === 2) {
         totalMoves();
@@ -40,16 +39,13 @@ let matchedCards = 0;
 //Function to check for a match
  function cardMatchCheck() {
     if (flippedCards[0].firstElementChild.className === flippedCards[1].firstElementChild.className) {
-        console.log("Cards match");
         flippedCards[0].classList.toggle('match');
         flippedCards[1].classList.toggle('match');
         flippedCards = [];
         matchedCards++;
-        console.log('Total = ' + matchedCards);
         gameOver();
     } else {
         setTimeout(() => {
-        console.log("No match found");
         flipCard(flippedCards[0]);
         flipCard(flippedCards[1]);
         flippedCards = [];
@@ -102,7 +98,6 @@ function changeCardPosition(){
 //Functionality for ending game
 function gameOver() {
     if (matchedCards === pairs) {
-        console.log('All cards have matched! You win!');
         starRating();
         stopTimer();
         popup();
