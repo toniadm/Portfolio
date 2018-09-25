@@ -1,0 +1,271 @@
+/*
+ * html and body styling
+*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
+    font-family: 'Coda', cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 4vh;
+    text-align: center;
+}
+
+h3 {
+    display: none;
+}
+
+p {
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align: center;
+    font-size: 4vh;
+    line-height: 2px;
+}
+
+/*
+ * Styles for the deck of cards
+ */
+
+.deck {
+    width: 660px;
+    min-height: 680px;
+    background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
+}
+
+.deck .card {
+    height: 125px;
+    width: 125px;
+    background: #2e3d49;
+    font-size: 0;
+    color: #ffffff;
+    border-radius: 30%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.deck .card.open {
+    transform: rotateY(0);
+    background: #02b3e4;
+    cursor: default;
+}
+
+.deck .card.show {
+    font-size: 33px;
+    pointer-events: none;
+}
+
+.deck .card.match {
+    cursor: default;
+    background: #02ccba;
+    font-size: 33px;
+}
+
+.deck.card.disabled {
+
+}
+
+.card.flip {
+    transform: rotateY(180deg);
+}
+
+/*
+ * Styles for the Score Panel
+ */
+
+.score-panel {
+    text-align: left;
+    width: 345px;
+    margin-bottom: 10px;
+}
+
+.score-panel .stars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+}
+
+.score-panel .restart {
+    float: right;
+    cursor: pointer;
+}
+
+#one {
+    display: inline;
+}
+
+#two {
+    display: inline;
+}
+
+#three {
+    display: inline;
+}
+
+.stars2 {
+    list-style-type: none;
+    color: #CFB53B;
+}
+
+.stars2 li {
+    display: inline-block
+}
+
+/*
+ * Styles for the Modal
+ */
+
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s
+}
+
+ .popup-con {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 16px 24px;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.close-icon {
+    float: right;
+    width: 24px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+.close-icon:hover {
+    background-color: darkgray;
+}
+
+.show-popup {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+/*
+ * Styles for the Modal
+ */
+
+ .timer {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.modp {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 4vh;
+}
+
+.modbtn {
+    box-shadow:inset 0 1px 0 0 #ffffff;
+    background-color: rgba(0,128,128, 0.7);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px solid #dcdcdc;
+    margin: 0 auto;
+    display: block;
+    color: #000000;
+    font-family: Georgia;
+    font-size: 24px;
+    font-style: normal;
+    height: 40px;
+    line-height: 40px;
+    width: 157px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*
+ * Responsive styling
+*/
+
+@media only screen and (max-width: 600px) {
+    .score-panel {
+        width: 90%;
+    }
+
+    .deck {
+        width: 97%;
+        padding: 20px;
+        min-height: 130vw;
+    }
+
+    .deck .card {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .popup-con {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .score-panel {
+        font-size: 20px;
+    }
+}
