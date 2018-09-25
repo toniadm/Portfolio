@@ -126,7 +126,7 @@ function popup() {
     document.querySelector('.tot-moves').innerHTML = moves;
     document.querySelector('.mins').innerHTML = parseInt(seconds / 60);
     document.querySelector('.secs').innerHTML = seconds % 60;
-    var starPanel = document.querySelector('.stars').innerHTML;
+    const starPanel = document.querySelector('.stars').innerHTML;
     document.querySelector('.stars2').innerHTML = starPanel;
 }
 
