@@ -1,5 +1,7 @@
 # Memory Game Project
 
+![Image of Matching Game](memory.png)
+
 ## Table of Contents
 
 * [Instructions](#instructions)
